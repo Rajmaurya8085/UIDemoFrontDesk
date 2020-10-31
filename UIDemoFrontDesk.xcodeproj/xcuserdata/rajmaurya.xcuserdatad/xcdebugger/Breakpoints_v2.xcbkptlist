@@ -14,8 +14,8 @@
             filePath = "UIDemoFrontDesk/NotificationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "UIDemoFrontDesk/NotificationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "UIDemoFrontDesk/NotificationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "tableView(_:trailingSwipeActionsConfigurationForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
