@@ -11,6 +11,7 @@
 		9F209F88254D845F00A8EF85 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F209F86254D845F00A8EF85 /* NavigationBar.swift */; };
 		9F209F89254D845F00A8EF85 /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F209F87254D845F00A8EF85 /* NavigationBar.xib */; };
 		9F209F8B254D85E600A8EF85 /* DemoNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F209F8A254D85E600A8EF85 /* DemoNavigationController.swift */; };
+		9F209F8D254DFCDB00A8EF85 /* NotificationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F209F8C254DFCDB00A8EF85 /* NotificationDataModel.swift */; };
 		9F4CA2FF254A975800B4DB09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CA2FE254A975800B4DB09 /* AppDelegate.swift */; };
 		9F4CA301254A975800B4DB09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CA300254A975800B4DB09 /* SceneDelegate.swift */; };
 		9F4CA303254A975800B4DB09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CA302254A975800B4DB09 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 		9F209F86254D845F00A8EF85 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		9F209F87254D845F00A8EF85 /* NavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
 		9F209F8A254D85E600A8EF85 /* DemoNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoNavigationController.swift; sourceTree = "<group>"; };
+		9F209F8C254DFCDB00A8EF85 /* NotificationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDataModel.swift; sourceTree = "<group>"; };
 		9F4CA2FB254A975800B4DB09 /* UIDemoFrontDesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIDemoFrontDesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4CA2FE254A975800B4DB09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F4CA300254A975800B4DB09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				9F209F83254D800500A8EF85 /* UIColor+Additions.swift */,
 				9FBEACAA254C46F0007A5AE0 /* UIExtension.swift */,
 				9FBEACAC254D1F88007A5AE0 /* NotificationViewController.swift */,
+				9F209F8C254DFCDB00A8EF85 /* NotificationDataModel.swift */,
 				9F209F8A254D85E600A8EF85 /* DemoNavigationController.swift */,
 				9F4CA304254A975800B4DB09 /* Main.storyboard */,
 				9F209F85254D845F00A8EF85 /* navigation */,
@@ -292,6 +295,7 @@
 				9F4CA303254A975800B4DB09 /* ViewController.swift in Sources */,
 				9F209F8B254D85E600A8EF85 /* DemoNavigationController.swift in Sources */,
 				9F4CA2FF254A975800B4DB09 /* AppDelegate.swift in Sources */,
+				9F209F8D254DFCDB00A8EF85 /* NotificationDataModel.swift in Sources */,
 				9F4CA301254A975800B4DB09 /* SceneDelegate.swift in Sources */,
 				9F209F88254D845F00A8EF85 /* NavigationBar.swift in Sources */,
 				9FBEACAB254C46F0007A5AE0 /* UIExtension.swift in Sources */,

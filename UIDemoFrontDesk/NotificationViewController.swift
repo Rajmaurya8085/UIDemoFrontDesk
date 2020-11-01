@@ -9,7 +9,6 @@
 import UIKit
 
 class NotificationViewController: UIViewController {
-
     
     @IBOutlet weak var notificationTableView: UITableView!
     @IBOutlet weak var unreadNotificationView:UIView?
@@ -26,15 +25,15 @@ class NotificationViewController: UIViewController {
         return .lightContent
     }
     
-  
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         notificationDataList =  generateNotificationDataModel()
-        
     }
     
     @IBAction func didClearButtonClicked(){
         unreadNotificationView?.isHidden =  true
+        notificationTableView.reloadData()
+        notificationDataList.removeAll()
     }
 }
 
@@ -74,7 +73,8 @@ extension NotificationViewController:UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        notificationDataList[indexPath.row].isUread =  false
+        notificationTableView.reloadData()
     }
 }
 
@@ -83,10 +83,8 @@ extension NotificationViewController:UITableViewDataSource, UITableViewDelegate{
 class NotificationListTableCell:UITableViewCell{
     
     @IBOutlet weak var titleLbl: UILabel!
-    
     @IBOutlet weak var timeLbl: UILabel!
     @IBOutlet weak var typeLbl: UILabel!
-    
     @IBOutlet weak var unreadImageView: UIImageView!
     @IBOutlet weak var pointWidthConst: NSLayoutConstraint!
     @IBOutlet weak var pointLeadingConst: NSLayoutConstraint!
@@ -111,27 +109,7 @@ class NotificationListTableCell:UITableViewCell{
             pointLeadingConst.constant =  0.0
         }
     }
-    
 }
 
 
 
-func generateNotificationDataModel()->[NotificationDataModel]{
-    
-    var notificationDataModel:[NotificationDataModel] =  [NotificationDataModel]()
-    
-    let notificationTitle =  ["You received a group invitation", "Your order is confirmed by the restaurant!","Your IQ Guest Pass request is approved by John Doe!","You have received an IQ Guest Pass request from John Doe", "You Local Personal Monthly Plan is approved!", "Low balance notice", "You received a group invitation", "Your order is confirmed by the restaurant!","Your IQ Guest Pass request is approved by John Doe!","You have received an IQ Guest Pass request from John Doe"]
-    let notificationType =  ["XYZ Parking", "PizzaHut", "WeWork", "IQ","IQ","IQ", "XYZ Parking", "PizzaHut", "WeWork", "IQ",]
-    let notificationRead = [true, true, false, false, false, false, false, false, false, false]
-    for index in 0..<10{
-        notificationDataModel.append(NotificationDataModel(title: notificationTitle[index], type: notificationType[index], time: "3:30 PM", isUread: notificationRead[index]))
-    }
-    
-    return notificationDataModel
-}
-struct NotificationDataModel{
-    let title:String
-    let type:String
-    let time:String
-    let isUread:Bool
-}
